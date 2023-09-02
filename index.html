@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="jssheet" href="index.js">
+    
+
+</head>
+<body>
+    <div class="container">
+        <h2>Job Application Form</h2>
+        <form id="jobApplicationForm">
+            <div class="form-group">
+                <label for="fullName">First Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            <div class="form-group">
+                <label for="Middle">Middle Name:</label>
+                <input type="text" id="Middle" name="Middle Name" required>
+            </div>
+            <div class="form-group">
+                <label for="LastName">Last Name:</label>
+                <input type="text" id="Last Name" name="Last Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="Mobile Number">Mobile number:</label>
+                <input type="number" id="number" name="number" required>
+            </div>
+            <div class="form-group">
+                <label for="position">Position Applying For:</label>
+                <input type="text" id="position" name="position" required>
+            </div>
+            <div class="form-group">
+                <label for="resume">Resume (PDF):</label>
+                <input type="file" id="resume" name="resume" accept=".pdf" required>
+            </div>
+            <div class="form-group">
+                <label for="coverLetter">Cover Letter:</label>
+                <textarea id="coverLetter" name="coverLetter" required></textarea>
+            </div>
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("jobApplicationForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            // You can add JavaScript code here to handle form submission, e.g., sending data to a server.
+            alert("Application submitted successfully!");
+            
+        });
+    </script>
+
+    <p>Designed by Noxolo Khoza</p>
+</body>
+</html>
